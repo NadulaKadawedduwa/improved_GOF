@@ -29,8 +29,9 @@ pip install -e .
 
 # Dataset
 
-Mip-NeRF 360 dataset: [official webiste](https://jonbarron.info/mipnerf360/),
-Tanks and Temples dataset from [preprocessed here](https://huggingface.co/datasets/ZehaoYu/gaussian-opacity-fields/tree/main)
+Mip-NeRF 360 dataset: [official webiste](https://jonbarron.info/mipnerf360/)
+
+Tanks and Temples dataset: [preprocessed here](https://huggingface.co/datasets/ZehaoYu/gaussian-opacity-fields/tree/main)
     For the Tanks and Temples dataset, you need to download the ground truth point clouds, alignments and cropfiles and save to `eval_tnt/TrainingSet`, such as `eval_tnt/TrainingSet/Caterpillar/Caterpillar.ply` from [here](https://www.tanksandtemples.org/download/).
 
 
