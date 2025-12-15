@@ -1,29 +1,4 @@
 <p align="center">
-
-  <h1 align="center">Gaussian Opacity Fields: Efficient Adaptive Surface Reconstruction in Unbounded Scenes</h1>
-  <p align="center">
-    <a href="https://niujinshuchong.github.io/">Zehao Yu</a>
-    ·
-    <a href="https://tsattler.github.io/">Torsten Sattler</a>
-    ·
-    <a href="http://www.cvlibs.net/">Andreas Geiger</a>
-
-  </p>
-
-  <h2 align="center">SIGGRAPH ASIA 2024 (Journal Track)</h2>
-
-  <h3 align="center"><a href="https://drive.google.com/file/d/1_IEpaSqDP4DzQ3TbhKyjhXo6SKscpaeq/view?usp=share_link">Paper</a> | <a href="https://arxiv.org/pdf/2404.10772.pdf">arXiv</a> | <a href="https://niujinshuchong.github.io/gaussian-opacity-fields/">Project Page</a>  </h3>
-  <div align="center"></div>
-</p>
-
-
-<p align="center">
-  <a href="">
-    <img src="./media/teaser_gof.png" alt="Logo" width="95%">
-  </a>
-</p>
-
-<p align="center">
 Gaussian Opacity Fields (GOF) enables geometry extraction with 3D Gaussians directly by indentifying its level set. Our regularization improves surface reconstruction and we utilize Marching Tetrahedra for adaptive and compact mesh extraction.</p>
 <br>
 
