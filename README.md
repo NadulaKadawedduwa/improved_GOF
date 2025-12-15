@@ -38,52 +38,24 @@ For the Tanks and Temples dataset, you need to download the ground truth point c
 
 # Training and Evaluation
 ```
+# Parameter studies code on bicycle dataset
+python scripts/run_parameter_study.py
+
 # Mip-NeRF 360 Bicycle dataset
 python scripts/run_mipnerf360.py
 
 # Tanks and Temples dataset
 python scripts/run_tnt.py
-
-# Parameter studies code on bicycle dataset
-python scripts/run_parameter_study.py
 ```
-
-# Custom Dataset
-We use the same data format from 3DGS, please follow [here](https://github.com/graphdeco-inria/gaussian-splatting?tab=readme-ov-file#processing-your-own-scenes) to prepare the your dataset. Then you can train your model and extract a mesh (we use the Tanks and Temples dataset for example)
-```
-# training
-# -r 2 for using downsampled images with factor 2
-# --use_decoupled_appearance to enable decoupled appearance modeling if your images has changing lighting conditions
-python train.py -s TNT_GOF/TrainingSet/Caterpillar -m exp_TNT/Caterpillar -r 2 --use_decoupled_appearance
-
-# extract the mesh after training
-python extract_mesh.py -m exp_TNT/Caterpillar --iteration 30000
-
-# you can open extracted mesh with meshlab or using the following script based on open3d
-python mesh_viewer.py exp_TNT/Caterpillar/test/ours_30000/fusion/mesh_binary_search_7.ply
-```
-
-# Acknowledgements
-This project is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting) and [Mip-Splatting](https://github.com/autonomousvision/mip-splatting). Regularizations and some visualizations are taken from [2DGS](https://surfsplatting.github.io/). Tetrahedra triangulation is taken from [Tetra-NeRF](https://github.com/jkulhanek/tetra-nerf). Marching Tetrahdedra is adapted from [Kaolin](https://github.com/NVIDIAGameWorks/kaolin/blob/master/kaolin/ops/conversions/tetmesh.py) Library. Evaluation scripts for DTU and Tanks and Temples dataset are taken from [DTUeval-python](https://github.com/jzhangbs/DTUeval-python) and [TanksAndTemples](https://github.com/isl-org/TanksAndTemples/tree/master/python_toolbox/evaluation) respectively. We thank all the authors for their great work and repos. 
 
 # Citation
-If you find our code or paper useful, please cite
+Refer to final report to see what changes were made to the original code.
+Codebase was expanded from the original [Gaussian Opacity Fields paper](https://niujinshuchong.github.io/gaussian-opacity-fields/).
 ```bibtex
 @article{Yu2024GOF,
   author    = {Yu, Zehao and Sattler, Torsten and Geiger, Andreas},
   title     = {Gaussian Opacity Fields: Efficient Adaptive Surface Reconstruction in Unbounded Scenes},
   journal   = {ACM Transactions on Graphics},
   year      = {2024},
-}
-```
-If you find the regularizations useful, please kindly cite
-```bibtex
-@inproceedings{Huang2DGS2024,
-    title={2D Gaussian Splatting for Geometrically Accurate Radiance Fields},
-    author={Huang, Binbin and Yu, Zehao and Chen, Anpei and Geiger, Andreas and Gao, Shenghua},
-    publisher = {Association for Computing Machinery},
-    booktitle = {SIGGRAPH 2024 Conference Papers},
-    year      = {2024},
-    doi       = {10.1145/3641519.3657428}
 }
 ```
