@@ -48,7 +48,7 @@ python scripts/run_mipnerf360.py
 python scripts/run_tnt.py
 ```
 
-# Citation
+# Original Codebase Citation
 Refer to final report to see what changes were made to the original code.
 Codebase was expanded from the original [Gaussian Opacity Fields paper](https://niujinshuchong.github.io/gaussian-opacity-fields/).
 ```bibtex
