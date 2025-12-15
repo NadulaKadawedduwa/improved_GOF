@@ -29,27 +29,23 @@ pip install -e .
 
 # Dataset
 
-Mip-NeRF 360 dataset: [official webiste](https://jonbarron.info/mipnerf360/)
+Mip-NeRF 360 dataset: [official webiste](https://jonbarron.info/mipnerf360/) (Only bicycle was tested)
 
 Tanks and Temples dataset: [preprocessed here](https://huggingface.co/datasets/ZehaoYu/gaussian-opacity-fields/tree/main)
-    For the Tanks and Temples dataset, you need to download the ground truth point clouds, alignments and cropfiles and save to `eval_tnt/TrainingSet`, such as `eval_tnt/TrainingSet/Caterpillar/Caterpillar.ply` from [here](https://www.tanksandtemples.org/download/).
+
+For the Tanks and Temples dataset, you need to download the ground truth point clouds, alignments and cropfiles and save to `eval_tnt/TrainingSet`, such as `eval_tnt/TrainingSet/Caterpillar/Caterpillar.ply` from [here](https://www.tanksandtemples.org/download/).
 
 
 # Training and Evaluation
 ```
-# you might need to update the data path in the script accordingly
-
-# NeRF-synthetic dataset
-python scripts/run_nerf_synthetic.py
-
-# Mip-NeRF 360 dataset
+# Mip-NeRF 360 Bicycle dataset
 python scripts/run_mipnerf360.py
 
 # Tanks and Temples dataset
 python scripts/run_tnt.py
 
-# DTU dataset
-python scripts/run_dtu.py
+# Parameter studies code on bicycle dataset
+python scripts/run_parameter_study.py
 ```
 
 # Custom Dataset
