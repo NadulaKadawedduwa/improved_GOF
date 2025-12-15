@@ -1,17 +1,7 @@
-<p align="center">
-Gaussian Opacity Fields (GOF) enables geometry extraction with 3D Gaussians directly by indentifying its level set. Our regularization improves surface reconstruction and we utilize Marching Tetrahedra for adaptive and compact mesh extraction.</p>
-<br>
-
-# Updates
-
-* **[2024.09.11]**: GOF is accepted to SIGGRAPH ASIA 2024 Journal Track. We updated paper with more details, explanations, and ablations.
-
-* **[2024.06.10]**: 🔥 Improve the training speed by 2x with [merged operations](https://github.com/autonomousvision/gaussian-opacity-fields/pull/58). 6 scenes in TNT dataset can be trained in ~24 mins and the bicycle scene in the Mip-NeRF 360 dataset can be trained in ~45 mins. Please pull the latest code and reinstall with `pip install submodules/diff-gaussian-rasterization` to use it.
-
 # Installation
 Clone the repository and create an anaconda environment using
 ```
-git clone git@github.com:autonomousvision/gaussian-opacity-fields.git
+git clone https://github.com/NadulaKadawedduwa/improved_GOF
 cd gaussian-opacity-fields
 
 conda create -y -n gof python=3.8
